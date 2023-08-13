@@ -51,3 +51,8 @@ function foodDiscountCalc(foodCost, discountPercent){
 
 cost= foodDiscountCalc(20,20);
 console.log("Total Cost:",cost);
+
+//ArrowFunctions
+const sumArr=(a,b)=> a+b;
+console.log(sumArr(1,3));
+
