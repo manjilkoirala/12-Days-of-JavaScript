@@ -9,10 +9,12 @@
 
 food=prompt("Price of food?")
 //console.log(food)
-tipPercentage=prompt("Discount Percent?")
-tipAmount=food*(tipPercentage/100)
-// console.log(tipAmount)
-// alert("Tip Amount is: "+tipAmount)
-document.getElementById("food").innerHTML=tipAmount;
+discountPercentage=prompt("Discount Percent?")
+discountAmount=food*(discountPercentage/100)
+totalAmount=food-discountAmount;
+// console.log(discountAmount)
+// alert("discount Amount is: "+discountAmount)
+document.getElementById("discount").innerHTML=discountAmount;
+document.getElementById("total").innerHTML=totalAmount;
 
 //user input
