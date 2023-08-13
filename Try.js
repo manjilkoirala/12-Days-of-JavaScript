@@ -10,7 +10,8 @@
 food=prompt("Price of food?")
 //console.log(food)
 tipPercentage=prompt("Discount Percent?")
-tipAmount=food*tipPercentage
-console.log(tipAmount)
+tipAmount=food*(tipPercentage/100)
+// console.log(tipAmount)
+alert("Tip Amount is: "+tipAmount)
 
 //user input
