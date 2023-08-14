@@ -26,3 +26,21 @@ console.log(person); //outputs object including phone as new property
 
 person['address']="Itahari";
 console.log(person); //outputs object including address as new property
+
+//using function
+const introduction=(name,shirt)=>{
+    const person1={
+        name: name,
+        shirt:shirt,
+
+    }
+    const intro ='Hi this is '+person1.name+'. My shirt color is '+person1.shirt;
+    return intro;
+}
+
+console.log(introduction("Manjil","Black"));
+
+
+
+
+//Methods in Object
