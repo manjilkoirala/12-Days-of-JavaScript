@@ -39,3 +39,16 @@ let myString="This is me";
 for(const char of myString){  //for in loop gives the number of elements in arrays
     console.log(char)
 }
+
+//Letter Counter
+
+let count=0;
+function letterCounter(phrase){
+    for(let letter in phrase){
+        count=Number(letter)
+        
+    }
+    return count+1;
+}
+console.log("Number of letter in Phrase is:",letterCounter("Hi, this is Manjil"))
+
