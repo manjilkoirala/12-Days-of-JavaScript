@@ -34,9 +34,9 @@ console.log(groceries.indexOf('🥭')); //gives index number of the element of a
 
 
 //sum of numbers in array
-let SUM=0;
-const sumArray=(numbers)=>{
 
+const sumArray=(numbers)=>{
+    let SUM=0;
     for(const number of numbers){
         SUM+=number;
     }
