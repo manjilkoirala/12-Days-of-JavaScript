@@ -44,3 +44,13 @@ console.log(introduction("Manjil","Black"));
 
 
 //Methods in Object
+
+const sum={
+    a:10,
+    b:20,
+    add: function (){                     //here add include function
+        return this.a + this.b;        //this points to the object(sum)
+    }
+}
+
+console.log(sum.add()); //sum.add() is method
