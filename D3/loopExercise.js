@@ -39,3 +39,22 @@ const letterFrequency=(phrase)=>{
 
 letterFrequency('hhaha');
 
+
+///Making wordFrequency('hello Manjil hello')👉 {'hello':2, 'Manjil':1}
+
+const wordFrequency=(phrase)=>{
+    let frequencyObject={}
+    array= phrase.split(' ');
+    for(const words of array){
+        if(words in frequencyObject){
+            frequencyObject[words]++
+        }else{
+            frequencyObject[words]=1;
+        }
+    }
+    console.log(frequencyObject);
+
+}
+
+wordFrequency('hello Manjil hello')
+
