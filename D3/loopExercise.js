@@ -33,11 +33,11 @@ const letterFrequency=(phrase)=>{
         }
 
     }
-   console.log(frequency)
+   return frequency
 
 }
 
-letterFrequency('hhaha');
+console.log(letterFrequency('hhaha'));
 
 
 ///Making wordFrequency('hello Manjil hello')👉 {'hello':2, 'Manjil':1}
@@ -57,4 +57,14 @@ const wordFrequency=(phrase)=>{
 }
 
 wordFrequency('hello Manjil hello')
+
+///Using previous function wordFrequency('hello Manjil hello')👉 {'hello':2, 'Manjil':1}
+
+const wordFrequencycheck=(phrase)=>{
+    
+    array= phrase.split(' ');
+    return letterFrequency(array);
+}
+
+console.log(wordFrequency('hello Manjil hello hello'))
 
