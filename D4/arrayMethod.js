@@ -53,5 +53,6 @@ const actors=[
 ]
 
 let details=actors.filter(actor=>actor.salary>10000)
+let names= details.map(nam=>nam.name).join(', ')
 
-playground.innerHTML='<h1>'+details[0].name+'</h1>'
+playground.innerHTML='<h1>'+JSON.stringify(names)+'</h1>'
