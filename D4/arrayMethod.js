@@ -18,3 +18,40 @@ const double=(numb)=>{
 
 console.log(double([5,10,15]))
 
+//.filter
+
+
+//Using loop to demonstrate how .filter works
+const filter=(num,greaternum)=>{
+    greater=[];
+    for(const number of num){
+        if(number>greaternum){
+            greater.push(number)
+
+        }
+    }
+    return greater;
+}
+
+console.log(filter([1,2,3,4],2))
+
+
+//Lets use .filter() method to convert this code
+
+let numbs=[1,2,3,4,5,6]
+result= numbs.filter(nums=>nums>3)
+
+console.log(result)
+
+
+//Array of objects
+
+const actors=[
+    {name:'Manjil', college:'PUSOE', semester:'7th',salary:10000},
+    {name:'Bishal', college:'PUSET', semester:'6th',salary:100000},
+    {name:'Nishan', college:'PUS', semester:'4th',salary:1000000}
+]
+
+let details=actors.filter(actor=>actor.salary>10000)
+
+playground.innerHTML='<h1>'+details[0].name+'</h1>'
