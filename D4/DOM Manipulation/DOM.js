@@ -50,7 +50,7 @@ function clearCount() {
     timesClicked.green = 0
 
     colorDiv.forEach(color => {
-        color.innerText = 0
+        color.innerText = ''
 
     })
 }
