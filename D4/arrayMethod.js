@@ -47,12 +47,33 @@ console.log(result)
 //Array of objects
 
 const actors=[
-    {name:'Manjil', college:'PUSOE', semester:'7th',salary:10000},
-    {name:'Bishal', college:'PUSET', semester:'6th',salary:100000},
-    {name:'Nishan', college:'PUS', semester:'4th',salary:1000000}
+    {name:'Manjil', college:'PUSOE', semester:'7th',salary:50},
+    {name:'Bishal', college:'PUSET', semester:'6th',salary:100},
+    {name:'Nishan', college:'PUS', semester:'4th',salary:10}
 ]
+console.log(actors.map(nam=>nam.salary))
 
-let details=actors.filter(actor=>actor.salary>10000)
+let details=actors.filter(actor=>actor.salary>10)
 let names= details.map(nam=>nam.name).join(', ')
+// playground.innerHTML='<h1>'+JSON.stringify(names)+'</h1>'
 
-playground.innerHTML='<h1>'+JSON.stringify(names)+'</h1>'
+
+
+
+//Using .reduce() // Sum of a number
+
+const sum=(a,b)=>a+b;
+
+const numss=[1,2,3,4]
+
+resultss=numss.reduce(sum)
+
+console.log(resultss)
+
+//sum of salary using .resuce()
+
+let n=(actors.map(nam=>nam.salary)).reduce(sum)
+console.log(n);
+
+// sumSalary= n.reduce(sum)
+
