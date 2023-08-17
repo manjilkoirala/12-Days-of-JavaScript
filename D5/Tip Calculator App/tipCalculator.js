@@ -36,6 +36,8 @@ function increasePeople(){
 
 //decreasePeople()
 
+document.getElementById("decrease").onclick=()=>decreasePeople(); //Tried to create function in JS removing in HTML
+
 function decreasePeople()
 {
     if(numOfPeople==1){
