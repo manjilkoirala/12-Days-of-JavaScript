@@ -59,6 +59,12 @@ function checkWin(user, computer) {
     }
     return score
 }
+
+
+//Reset Game
+function endGame(){
+    result.innerText=null
+}
 userClicked()
 
 
