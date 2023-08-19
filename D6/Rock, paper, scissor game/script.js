@@ -1,27 +1,32 @@
 //All Function Calling here
+const totalScore={playerscore:0,computerscore:0}
 
 function onClickRPS(playerChoice) {
+    
+
     console.log(playerChoice)
     const computer = computerChoice();
     console.log(computer)
     scor = checkWin(playerChoice, computer)
+    totalScore['playerscore']+=scor
+    totalScore['computerscore']-=scor
+    playerscores.innerText=`Player Score: ${totalScore['playerscore']} and Computer Score: ${totalScore['computerscore']}`
+    hands.innerText='Player: '+ playerChoice +' and '+'Computer: '+ computer
     showResult(scor, playerChoice, computer)
 
 }
 
 //DOM: Show Result
 
-function showResult(gameResult, player, computer) {
+function showResult(gameResult) {
     if (gameResult == 0) {
-        result.innerText = `Draw
-        Player choose: ${player}, Computer choose: ${computer}`
+        result.innerText = `Draw!!`
     } else if (gameResult == 1) {
-        result.innerText = `Player Win
-        Player choose: ${player}, Computer choose: ${computer}`
+        result.innerText = `Player Win!!`
     } else {
-        result.innerText = `Computer Loss
-        Player choose: ${player}, Computer choose: ${computer}`
+        result.innerText = `Computer Win!!`
     }
+
 }
 
 //Calculater which option user clicked
@@ -64,6 +69,10 @@ function checkWin(user, computer) {
 //Reset Game
 function endGame(){
     result.innerText=null
+    hands.innerText=null
+    playerscores.innerText=null
+    totalScore['computerscore']=0
+    totalScore['playerscore']=0
 }
 userClicked()
 

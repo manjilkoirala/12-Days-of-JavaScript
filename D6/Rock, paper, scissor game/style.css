@@ -37,3 +37,10 @@ button{
     margin-top: 20px;
   }
 
+  #result{
+    color: yellow;
+  }
+
+  #hands{
+    color: skyblue;
+  }
