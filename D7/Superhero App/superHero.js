@@ -16,6 +16,6 @@ function getSuperHero(name){
 
 function getNewHero(){
 
-hero=prompt('Type your hero name')
+    hero= document.getElementById('search').value
 getSuperHero(hero)
 }
