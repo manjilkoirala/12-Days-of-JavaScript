@@ -1,8 +1,8 @@
-function getSuperHero(url){
-    fetch(url)
+function getSuperHero(name){
+    fetch(`https://superheroapi.com/api.php/2010389372655902/search/${name}`)
     .then(response=>response.json())
     .then(json=>{
-        let superhero=json.image.url
+        let superhero=json.results[0].image.url
         console.log(superhero)
         hero=document.getElementById("image")
         hero.style.width="300px"
@@ -14,4 +14,8 @@ function getSuperHero(url){
     
 }
 
-getSuperHero('https://superheroapi.com/api.php/2010389372655902/200');
+function getNewHero(){
+
+hero=prompt('Type your hero name')
+getSuperHero(hero)
+}
