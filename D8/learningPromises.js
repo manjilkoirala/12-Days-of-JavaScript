@@ -15,3 +15,8 @@ let myPromise = new Promise((myResolve, myReject)=> {
   
   
 console.log(myPromise.then(value=>console.log(value)).catch(err=>console.log(err)))
+
+
+
+
+
