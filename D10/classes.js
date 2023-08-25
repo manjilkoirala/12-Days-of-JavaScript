@@ -37,4 +37,22 @@ console.log('After Brake',bugati.speed)
 bugati.stopSpeed()
 console.log('After Stop',bugati.speed)
 
+Array.prototype.myLenght=function(){
+    console.log(this.length)
+}
+
+const num=[1,2,4,5,1]
+
+num.myLenght()
+
+
+//Making own Push method
+Array.prototype.myPush=function(item){
+    return this[this.length]=item
+}
+
+items=[1,2,3]
+items.myPush(5)
+items.myPush(6)
+console.log(items)
 

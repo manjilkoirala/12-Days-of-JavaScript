@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #wrap{
+            width: 100%;
+            height: 100hv;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #amount{
+           
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        
+    </style>
+    
+    <title>Banking System</title>
+</head>
+<body>
+    <div id="wrap">
+        <h2>Banking System🏦</h2>
+        <div id="input">
+        <input type="text" id="amount" placeholder="Amount"></div>
+        <div id="transaction">
+            <button id="deposite" onclick="deposite()">Deposite+</button>
+            <button id="withdraw" onclick="withdraw()">Withdraw+</button>
+        </div>
+        
+            <h3>Balance: <span id="balance">0</span></h3>
+            <div id="not"></div>
+        
+
+    </div>
+    <script src="classPractice.js"></script>
+</body>
+</html>
