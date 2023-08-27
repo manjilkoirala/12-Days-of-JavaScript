@@ -1,34 +1,3 @@
-/* 
-🌟 APP: Make Netflix
-
-Create a fetchMovies() function that will make a dynamic API call to what you need 👇
-========================================
-
-- fetchMovies()
-
-** fetchMovies takes in an URL, a div id or class from the HTML, and a path (poster or backdrop)
-
-
-
-These are the 3 main functions you must create 👇
-========================================
-
-- getOriginals()
-
-- getTrendingNow()
-
-- getTopRated()
-
-
-** These functions will provide the URL you need to fetch movies of that genere **
-
-These are all the DIV ID's you're gonna need access to 👇
-========================================================
-#1 CLASS 👉 'original__movies' = Div that holds Netflix Originals
-#2 ID 👉 'trending' = Div that holds trending Movies
-#3 ID 👉 'top_rated' = Div that holds top rated Movies
-*/
-
 // Call the main functions the page is loaded
 window.onload = () => {
     getOriginals()
@@ -36,9 +5,7 @@ window.onload = () => {
     getTopRated()
   }
   
-  // ** Helper function that makes dynamic API calls **
-  // path_type 👉 (backdrop, poster)
-  // dom_element 👉 (trending, top rated)
+
   // fetchMovies('https://api.themoviedb.org/3/movie/top_rated?api_key=19f84e11932abbc79e6d83f82d6d1045&language=en-US&page=1', 'top_rated', 'backdrop_path')
   function fetchMovies(url, dom_element, path_type) {
     fetch(url)
